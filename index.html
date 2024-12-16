@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" href="./Images/logo-sm.png" type="icon">
+    <title>Home</title>
+</head>
+<body class="bg-dark font-cursive text-white">
+  <div class="games">
+    <div class="headerImage">
+        <img class="w-100" src="./Images/wraper.png" alt="navbar background">
+    </div>
+
+    <nav class="navbar navbar-expand-lg nav-bg position-sticky top-0 z-3 col-md-6 col-lg-9">
+        <div class="container">
+           <h5 class="navbar-brand mb-0 text-uppercase text-white">
+              <img src="./images/logo-sm.png" alt="logo" style="max-width: 40px" /> Game Reviews</h5>
+           <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse small navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu small">
+                 <li class="nav-item">
+                    <a role="button" class="nav-link active text-uppercase text-white" aria-current="page" data-category="mmorpg">mmorpg</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase text-white" data-category="shooter">shooter</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase text-white" data-category="sailing">sailing</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase text-white" data-category="permadeath">permadeath</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase text-white" data-category="superhero">superhero</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase text-white" data-category="pixel">pixel</a>
+                 </li>
+              </ul>
+           </div>
+        </div>
+     </nav>
+
+     <div class="container my-5 home">
+        <div class="position-relative">
+           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gameData"></div>
+        </div>
+    </div>
+</div>
+  </div>
+   
+
+  <div class="details d-none">
+     <div class="container">
+        <div class="hstack justify-content-between">
+           <h1 class="text-center h3 py-4">Details Game</h1>
+           <i id="Close" class="fa-solid fa-xmark fs-2"></i>
+        </div>
+        <div class="row g-4" id="detailsContent"></div>
+     </div>
+    </div>
+
+  <div class="loading d-none">
+     <span class="loader"></span>
+  </div>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js" type="module"></script>
+</body>
+</html>
